@@ -7,11 +7,17 @@ public abstract class Character {
 
     public boolean learnSkill(Skill skill) {
         // Aquí tu código
-        return false; // sustituye este boolean por el return real
+       return skills.add(skill);
+        // sustituye este boolean por el return real
     }
 
     public boolean hasSkill(Skill skill) {
         // Aquí tu código
-        return false;  // sustituye este boolean por el return real
+        boolean A=false;
+        if (skills.contains(skill))
+        {A=true;}
+        else{A=false;}
+        return A;  // sustituye este boolean por el return real
+        // o mas sencillo return skills.contains(skill)
     }
 }
